@@ -2291,73 +2291,72 @@ section {
   color: #fff;
 }
 
-.demo {
-  background: linear-gradient(to right, #4e42b9, #e98223);
+[data-toggle="collapse"] i:before {
+  content: "\2212";
 }
-a:hover,
-a:focus {
-  text-decoration: none;
-  outline: none;
+
+[data-toggle="collapse"].collapsed i:before {
+  content: "\002B";
 }
-#accordion .panel {
-  border: none;
-  border-radius: 5px;
-  box-shadow: none;
-  margin-bottom: 10px;
-  background: transparent;
-}
-#accordion .panel-heading {
-  padding: 0;
-  border: none;
-  border-radius: 5px;
-  background: transparent;
-  position: relative;
-}
-#accordion .panel-title a {
-  display: block;
-  padding: 20px 30px;
-  margin: 0;
-  background: rgba(0, 0, 0, 0.4);
-  font-size: 17px;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: none;
-  border-radius: 5px;
-  position: relative;
-}
-#accordion .panel-title a.collapsed {
-  border: none;
-}
-#accordion .panel-title a:before,
-#accordion .panel-title a.collapsed:before {
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
-  width: 30px;
-  height: 30px;
-  line-height: 27px;
-  text-align: center;
-  font-size: 25px;
-  font-weight: 900;
-  color: #fff;
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  transform: rotate(180deg);
-  transition: all 0.4s cubic-bezier(0.08, 1.09, 0.32, 1.275);
-}
-#accordion .panel-title a.collapsed:before {
-  color: rgba(255, 255, 255, 0.5);
-  transform: rotate(0deg);
-}
-#accordion .panel-body {
-  padding: 20px 30px;
-  background: rgba(0, 0, 0, 0.1);
-  font-size: 15px;
-  color: #fff;
-  line-height: 28px;
-  letter-spacing: 1px;
-  border-top: none;
-  border-radius: 5px;
+#accordion {
+  .card-header {
+    margin-bottom: 8px;
+  }
+  .accordion-title {
+    position: relative;
+    display: block;
+    padding: 8px 0 8px 50px;
+    background: #213744;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+    transition: all 0.4s ease-in-out;
+    i {
+      position: absolute;
+      width: 40px;
+      height: 100%;
+      left: 0;
+      top: 0;
+      color: #fff;
+      background: radial-gradient(rgba(33, 55, 68, 0.8), #213744);
+      text-align: center;
+      border-right: 1px solid transparent;
+    }
+    &:hover {
+      padding-left: 60px;
+      background: #213744;
+      color: #fff;
+
+      i {
+        border-right: 1px solid #fff;
+      }
+    }
+  }
+  .accordion-body {
+    padding: 40px 55px;
+
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    li {
+      padding-left: 1.2rem;
+      text-indent: -1.2rem;
+
+      &:before {
+        content: "\2022";
+        padding-right: 5px;
+        font-size: 16px;
+        font-style: normal;
+        color: #213744;
+      }
+    }
+  }
 }
