@@ -4,6 +4,9 @@ const slider = function () {
   const btnLeft = document.querySelector(".slider__btn--left");
   const btnRight = document.querySelector(".slider__btn--right");
   const dotContainer = document.querySelector(".dots");
+  const autoSlide = function () {
+    setInterval(nextSlide, 5000);
+  };
 
   let curSlide = 0;
   const maxSlide = slides.length;
@@ -61,6 +64,7 @@ const slider = function () {
     createDots();
 
     activateDot(0);
+    autoSlide();
   };
   init();
 
