@@ -17,7 +17,10 @@ document
 
 document
   .querySelector(".purecounter2")
-  .setAttribute("data-purecounter-end", dealsDone * 135000);
+  .setAttribute(
+    "data-purecounter-end",
+    Math.floor((dealsDone * 135000) / 1000000)
+  );
 
 console.log(currentDateMilliseconds);
 console.log(currentDateMillisecondsToDays);
