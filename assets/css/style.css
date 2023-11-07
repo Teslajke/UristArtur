@@ -1295,7 +1295,7 @@ section {
 
 .pricing h4 {
   font-size: 36px;
-  color: #402a23;
+  color: #42b883;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -1327,7 +1327,7 @@ section {
 }
 
 .pricing ul i {
-  color: #402a23;
+  color: #35495e;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1345,7 +1345,7 @@ section {
 }
 
 .pricing .btn-buy {
-  background: #402a23;
+  background: #35495e;
   display: inline-block;
   padding: 6px 35px 8px 35px;
   border-radius: 4px;
@@ -1365,7 +1365,7 @@ section {
 
 .pricing .featured h3 {
   color: #fff;
-  background: #402a23;
+  background: #35495e;
   box-shadow: 0 3px 7px rgba(148, 192, 69, 0.4);
 }
 
@@ -1378,7 +1378,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #402a23;
+  background: #35495e;
   color: #fff;
 }
 
