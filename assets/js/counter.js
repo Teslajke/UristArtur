@@ -3,6 +3,7 @@ const currentDateMilliseconds = new Date().getTime();
 let currentDateMillisecondsToDays =
   currentDateMilliseconds / (1000 * 60 * 60 * 24);
 
+const currentYear = new Date().getFullYear() - 2000;
 const purecounterElements = document.querySelectorAll(".purecounter");
 
 for (let elem of purecounterElements) {
@@ -22,5 +23,10 @@ document
     Math.floor((dealsDone * 135000) / 1000000)
   );
 
-console.log(currentDateMilliseconds);
-console.log(currentDateMillisecondsToDays);
+document
+  .querySelector(".purecounter3")
+  .setAttribute("data-purecounter-end", currentYear - 11);
+
+document
+  .querySelector(".purecounter4")
+  .setAttribute("data-purecounter-end", currentYear - 16);
