@@ -2374,3 +2374,51 @@ section {
 .qest {
   background-color: #cdcdcd;
 }
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-telegram {
+  background: #3b5998;
+  color: white;
+  font-size: 24px !important;
+  padding: 10px;
+}
+
+/* Twitter */
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+
+  color: #0088cc;
+  font-size: 24px !important;
+  padding: 10px;
+}
+
+.fa-vk {
+  background: #4c75a3;
+  color: white;
+  font-size: 24px !important;
+  padding: 10px;
+}
