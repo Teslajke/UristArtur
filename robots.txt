@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://bankrotstvo-kurs.ru/sitemap.xml
